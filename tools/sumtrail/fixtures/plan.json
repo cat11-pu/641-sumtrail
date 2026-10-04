@@ -1,0 +1,138 @@
+{
+  "module": "github.com/davecheney/issue44129",
+  "imports": [
+    "gopkg.in/alecthomas/kingpin.v2"
+  ],
+  "requires": [
+    {
+      "path": "github.com/alecthomas/template",
+      "version": "v0.0.0-20190718012654-fb15b899a751",
+      "indirect": true
+    },
+    {
+      "path": "github.com/alecthomas/units",
+      "version": "v0.0.0-20210208195552-ff826a37aa15",
+      "indirect": true
+    },
+    {
+      "path": "gopkg.in/alecthomas/kingpin.v2",
+      "version": "v2.2.6",
+      "indirect": true
+    }
+  ],
+  "sum": [
+    {
+      "path": "github.com/alecthomas/template",
+      "version": "v0.0.0-20190718012654-fb15b899a751",
+      "kind": "mod"
+    },
+    {
+      "path": "github.com/alecthomas/units",
+      "version": "v0.0.0-20210208195552-ff826a37aa15",
+      "kind": "mod"
+    },
+    {
+      "path": "github.com/alecthomas/units",
+      "version": "v0.0.0-20210208195552-ff826a37aa15",
+      "kind": "h1"
+    },
+    {
+      "path": "gopkg.in/alecthomas/kingpin.v2",
+      "version": "v2.2.6",
+      "kind": "mod"
+    },
+    {
+      "path": "gopkg.in/alecthomas/kingpin.v2",
+      "version": "v2.2.6",
+      "kind": "h1"
+    }
+  ],
+  "modules": [
+    {
+      "path": "github.com/alecthomas/assert/v2",
+      "version": "v2.0.0",
+      "requires": [],
+      "needs": [],
+      "have": {"mod": false, "h1": false}
+    },
+    {
+      "path": "github.com/alecthomas/template",
+      "version": "v0.0.0-20190718012654-fb15b899a751",
+      "requires": [],
+      "needs": [],
+      "have": {"mod": true, "h1": true}
+    },
+    {
+      "path": "github.com/alecthomas/template",
+      "version": "v0.2.0",
+      "requires": [
+        {"path": "gopkg.in/yaml.v2", "version": "v2.2.2"}
+      ],
+      "needs": ["gopkg.in/yaml.v2"],
+      "have": {"mod": true, "h1": true}
+    },
+    {
+      "path": "github.com/alecthomas/units",
+      "version": "v0.0.0-20210208195552-ff826a37aa15",
+      "requires": [],
+      "needs": [],
+      "have": {"mod": true, "h1": true}
+    },
+    {
+      "path": "github.com/alecthomas/units",
+      "version": "v0.3.0",
+      "requires": [],
+      "needs": [],
+      "have": {"mod": true, "h1": true}
+    },
+    {
+      "path": "gopkg.in/alecthomas/kingpin.v2",
+      "version": "v2.2.6",
+      "requires": [
+        {"path": "github.com/alecthomas/template", "version": "v0.0.0-20190718012654-fb15b899a751"},
+        {"path": "github.com/alecthomas/units", "version": "v0.0.0-20210208195552-ff826a37aa15"}
+      ],
+      "needs": ["github.com/alecthomas/template", "github.com/alecthomas/units"],
+      "have": {"mod": true, "h1": true}
+    },
+    {
+      "path": "gopkg.in/alecthomas/kingpin.v2",
+      "version": "v2.2.7",
+      "requires": [
+        {"path": "github.com/alecthomas/template", "version": "v0.2.0"},
+        {"path": "github.com/alecthomas/units", "version": "v0.3.0"},
+        {"path": "gopkg.in/yaml.v2", "version": "v2.4.0"}
+      ],
+      "needs": ["github.com/alecthomas/template", "github.com/alecthomas/units", "gopkg.in/yaml.v2"],
+      "have": {"mod": true, "h1": true}
+    },
+    {
+      "path": "gopkg.in/yaml.v2",
+      "version": "v2.2.2",
+      "requires": [],
+      "needs": [],
+      "have": {"mod": true, "h1": true}
+    },
+    {
+      "path": "gopkg.in/yaml.v2",
+      "version": "v2.4.0",
+      "requires": [],
+      "needs": [],
+      "have": {"mod": true, "h1": true}
+    }
+  ],
+  "ops": [
+    {"op": "build"},
+    {"op": "tidy"},
+    {"op": "build"},
+    {"op": "get", "path": "gopkg.in/alecthomas/kingpin.v2", "version": "v2.2.7"},
+    {"op": "build"},
+    {"op": "tidy"},
+    {"op": "build"},
+    {"op": "get", "path": "gopkg.in/alecthomas/kingpin.v2", "version": "v2.2.6"},
+    {"op": "build"},
+    {"op": "get", "path": "github.com/alecthomas/assert/v2", "version": "v2.0.0"},
+    {"op": "get", "path": "gopkg.in/alecthomas/kingpin.v2", "version": "v2.2.7"},
+    {"op": "build"}
+  ]
+}
